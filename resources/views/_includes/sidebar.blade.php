@@ -10,7 +10,7 @@
         	<a href="{{ url('apps') }}">Apps</a>
         </li>
         <li {!! Request::is('sql-console') ? 'class="active"' : '' !!}>
-        	<a href="{{ url('sql-console') }}">SQL console</a>
+        	<a href="{{ url('sql-console') }}">SQL REPL</a>
         </li>
         <li {!! Request::is('databases') ? 'class="active"' : '' !!}>
         	<a href="{{ url('databases') }}">Databases</a>

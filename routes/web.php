@@ -16,7 +16,8 @@ Route::view('/','index');
 Auth::routes();
 
 Route::middleware('auth')->group(function () {
-    Route::view('dashboard', 'dashboard.index');
+    Route::get('dashboard', 'DashboardController@index');
+    Route::post('toggle-https', 'DashboardController@toggleHTTPS');
 
     Route::get('profile', 'ProfileController@index');
     Route::post('change-password', 'ProfileController@changePassword')->name('change-password');

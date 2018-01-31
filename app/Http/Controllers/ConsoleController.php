@@ -7,6 +7,7 @@ use Session;
 
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
+use App\User;
 
 class ConsoleController extends Controller
 {
